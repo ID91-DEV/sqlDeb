@@ -49,7 +49,7 @@ def klbvfs_transform_byte(byte, key):
 
 # this is used for random seeks through encrypted files
 # it computes the prng state in log(offset) instead of offset cycles
-# https://www.nayuki.io/page/fast-skipping-in-a-linear-congruential-generator
+
 def prng_seek(k, offset, mul, add, mod):
   mul1 = mul - 1
   modmul = mul1 * mod
